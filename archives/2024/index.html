@@ -120,7 +120,7 @@
   <div class="archive syuanpi fadeInRightShort" id="archive">
     
       <aside class="archive-title">Total</aside>
-      <span class="archive-num">2 Posts In Total</span>
+      <span class="archive-num">3 Posts In Total</span>
     
       
       
@@ -132,6 +132,54 @@
             <div class="archive-group">
             <time class="archive-year"> 2024 </time>
             <div class="archive-list">
+          
+          
+        <div class="archive-post">
+          <div class="archive-post-content">
+            
+              <p>![[Pasted image 20240923154517.png]]<br>hexo是市面上最好用的个人博客搭建框架, 几秒钟就可以完成博客站建立和更新.</p>
+<h1 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h1><p>依赖安装</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://nodejs.org/">Node.js</a> (Node.js 版本需不低於8.10，建議使用 Node.js 10.0 及以上版本)</li>
+<li><a target="_blank" rel="noopener" href="http://git-scm.com/">Git</a></li>
+</ul>
+<p>安裝 Hexo</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>创建博客</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init myblog</span><br><span class="line">cd myblog </span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>配置部署</p>
+<p>生成token<br><code>github</code> - <code>点击头像</code> - setting-developer setting - personal access token - <code>fine-grain tokens</code> - <code>generate new tokens</code><br>![[Pasted image 20240923155522.png]]</p>
+<p>修改<code>_config.yml</code>文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:  </span><br><span class="line">  type: git  </span><br><span class="line">  repo: git@github.com:RainFung/rainfung.github.io</span><br><span class="line">  branch: master</span><br><span class="line">  token: github_pat_xxxxxx</span><br></pre></td></tr></table></figure>
+
+<p>更换主题<br>![[Pasted image 20240923154932.png]]</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/colmugx/hexo-theme-Nlvi">https://github.com/colmugx/hexo-theme-Nlvi</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 1. 下载主题文件包</span><br><span class="line">git clone https://github.com/ColMugX/hexo-theme-Nlvi.git themes/Nlvi</span><br><span class="line"></span><br><span class="line"># 2. myblog下, 安装主题渲染插件</span><br><span class="line">npm i hexo-renderer-swig --save</span><br></pre></td></tr></table></figure>
+
+<p>修改<code>_config.yml</code>配置文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: Nlvi </span><br></pre></td></tr></table></figure>
+
+<p><code>_source</code>文件夹里面的<code>about</code>目录拷贝到项目中的<code>source</code>目录中</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv _source/about myblog/source/</span><br></pre></td></tr></table></figure>
+
+<h4 id="参考文件"><a href="#参考文件" class="headerlink" title="参考文件"></a>参考文件</h4><p><a target="_blank" rel="noopener" href="https://www.mls-tech.info/hexo/hexo-deploy-github-authentication-failed/">https://www.mls-tech.info/hexo/hexo-deploy-github-authentication-failed/</a><br><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues/4757">https://github.com/hexojs/hexo/issues/4757</a><br><a target="_blank" rel="noopener" href="https://rainfung.github.io/">https://rainfung.github.io/</a><br><a target="_blank" rel="noopener" href="https://github.com/colmugx/hexo-theme-Nlvi">https://github.com/colmugx/hexo-theme-Nlvi</a></p>
+
+            
+          </div>
+          <div class="archive-post-info">
+            <time class="archive-post-time">
+              2024-09-23
+            </time>
+            <a  class="archive-post-link" href="/2024/09/23/2024-09-23-hexo/">
+              
+            </a>
+          </div>
+        </div>
+      
+        
+          
           
           
         <div class="archive-post">
